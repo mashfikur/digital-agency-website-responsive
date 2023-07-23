@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enver</title>
+
+    <!-- google imported fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind and Daisy UI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom styles -->
+    <style>
+      .font-sans {
+        font-family: "Nunito Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <!-- nav-logo -->
+            <div class="flex items-center gap-2">
+              <img src="images/logo.png" alt="" />
+              <a href="#" class="text-2xl font-bold">Enver</a>
+            </div>
+          </div>
+
+          <div class="navbar-center hidden md:flex">
+            <ul class="flex gap-6">
+              <li class="hover:text-[#5454D4]"><a href="#">Home</a></li>
+              <li class="hover:text-[#5454D4]"><a href="#">Services</a></li>
+              <li class="hover:text-[#5454D4]"><a href="#">Our Project</a></li>
+              <li class="hover:text-[#5454D4]"><a href="#">About us</a></li>
+            </ul>
+          </div>
+          <!--  -->
+          <div class="navbar-end hidden md:flex">
+            <a class="btn btn-neutral btn-outline">Contact us</a>
+          </div>
+          <!--  -->
+          <div class="navbar-end md:hidden">
+            <!-- hamburger-menu -->
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="dropdown-content space-y-2 mt-3 z-[1] bg-base-100 rounded-box"
+              >
+                <li class="hover:text-[#5454D4]"><a href="#">Home</a></li>
+                <li class="hover:text-[#5454D4]"><a href="#">Services</a></li>
+                <li class="hover:text-[#5454D4]">
+                  <a href="#">Our Project</a>
+                </li>
+                <li class="hover:text-[#5454D4]"><a href="#">About us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
