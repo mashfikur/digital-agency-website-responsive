@@ -27,10 +27,10 @@
       }
     </style>
   </head>
-  <body>
-    <header>
+  <body class="bg-[#19191B] text-white">
+    <header class="container mx-auto pt-10">
       <nav>
-        <div class="navbar bg-base-100">
+        <div class="navbar">
           <div class="navbar-start">
             <!-- nav-logo -->
             <div class="flex items-center gap-2">
@@ -40,7 +40,7 @@
           </div>
 
           <div class="navbar-center hidden md:flex">
-            <ul class="flex gap-6">
+            <ul class="flex gap-6 text-gray-400">
               <li class="hover:text-[#5454D4]"><a href="#">Home</a></li>
               <li class="hover:text-[#5454D4]"><a href="#">Services</a></li>
               <li class="hover:text-[#5454D4]"><a href="#">Our Project</a></li>
@@ -49,7 +49,7 @@
           </div>
           <!--  -->
           <div class="navbar-end hidden md:flex">
-            <a class="btn btn-neutral btn-outline">Contact us</a>
+            <a class="btn btn-neutral btn-outline text-gray-400">Contact us</a>
           </div>
           <!--  -->
           <div class="navbar-end md:hidden">
@@ -73,7 +73,7 @@
               </label>
               <ul
                 tabindex="0"
-                class="dropdown-content space-y-2 mt-3 z-[1] bg-base-100 rounded-box"
+                class="dropdown-content space-y-2 mt-3 z-[1] text-white rounded-box"
               >
                 <li class="hover:text-[#5454D4]"><a href="#">Home</a></li>
                 <li class="hover:text-[#5454D4]"><a href="#">Services</a></li>
@@ -86,6 +86,38 @@
           </div>
         </div>
       </nav>
+
+      <!-- banner section -->
+      <section
+        class="flex flex-col gap-8 mt-4 p-4 justify-between md:flex-row lg:mt-28"
+      >
+        <!-- banner content -->
+        <div class="space-y-4">
+          <h1
+            class="font-bold text-4xl md:text-5xl lg:text-[5rem] leading-tight"
+          >
+            Build Your <br />
+            Awesome <br />Platform
+          </h1>
+          <p class="text-lg text-gray-400">
+            Enver studio is a digital studio that offers several services <br />
+            such as UI/UX Design to developers, we will provide the best <br />
+            service for those of you who use our services.
+          </p>
+          <button class="btn btn-primary bg-[#5454D4] rounded-sm">
+            <a href="#">Our Services</a>
+            <img src="images/arrow-right-up.png" alt="" />
+          </button>
+        </div>
+        <!-- banner image -->
+        <div>
+          <img
+            class="scale-90 lg:scale-100"
+            src="images/banner-img.png"
+            alt=""
+          />
+        </div>
+      </section>
     </header>
     <main></main>
     <footer></footer>
